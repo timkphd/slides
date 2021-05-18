@@ -1,0 +1,37 @@
+#run from within examples/r
+source("mysys.R")
+source("tymer.R")
+html("readme.html")
+ls()
+cat("link for movie: https://73.34.192.221/quake/bagoftasks_R/#15")
+# start one of the slide shows:
+#  imbase("rbot/bagoftasks_R")
+#  imbase("stoma_R/stoma_R")
+#  imbase("Rstuff/Rstuff")
+imbase("Rstuff/Rstuff")
+z<-function(j) { 
+    if (missing(j)) { 
+        nextim() } 
+    else {
+        nextim(j)
+    } 
+}
+srun("-n 8 hostname")
+sys("srun -n 8 hostname")
+srun("-n 8 ./bcast.R > out.dat")
+sys("cat out.dat")
+x<-sys_vec("cat out.dat")
+for (i in 1:length(x)) { print(x[i])}
+
+
+srun('-n 4 R -q --no-save -e """
+library(\'Rmpi\')
+myid <- mpi.comm.rank(comm=0)
+sprintf(\'myid= %d on %s\',myid,mpi.get.processor.name())
+mpi.finalize()"""
+')
+
+
+z()
+
+#srun("-n 4 ./bot.R")

@@ -1,0 +1,55 @@
+#Runfrom within save
+
+%load_ext slurm_magic
+
+from slideshow import mysay
+from tymer import tymer
+from tymer import clist
+from tymer import sprint
+
+mpi4py=mysay(datadir="mpi01_py")
+#for rmpi02_py skip over list of examples nx(slide=18)
+#mpi4py=mysay(datadir="mpi02_py")
+#mpi4py=mysay(datadir="bagoftasks_py")
+#mpi4py=mysay(datadir="stoma_py")
+#mpi4py=mysay(datadir="stomb_py")
+
+mpi4py.nx()
+
+%macro n 4
+
+nx=mpi4py.nx
+
+cd ../..
+
+!srun -n 4 ./P_ex00.py
+
+# In[9]:
+
+srun -n 8 hostname
+
+# In[10]:
+
+!srun -n 8 hostname
+
+# In[11]:
+
+tymer(["-i","start"])
+
+# In[12]:
+
+%%capture out
+srun -n 8 ./report.py
+
+# In[13]:
+
+tymer(["-i","done"])
+
+# In[14]:
+
+for x in clist(out) :
+    print(x)
+
+n
+
+nx(slide=1)
