@@ -3,17 +3,21 @@
 %load_ext slurm_magic
 
 from slideshow import mysay
+from slideshow import mymovie
 from tymer import tymer
 from tymer import clist
 from tymer import sprint
 
-mpi4py=mysay(datadir="mpi01_py")
+#mpi4py=mysay(datadir="mpi01_py")
 #for rmpi02_py skip over list of examples nx(slide=18)
 #mpi4py=mysay(datadir="mpi02_py")
-#mpi4py=mysay(datadir="bagoftasks_py")
+mpi4py=mysay(datadir="bagoftasks_py")
+#curl https://raw.githubusercontent.com/timkphd/examples/master/r/laser.tgz | tar -xz
+#https://73.34.192.221/bot
+#run simple.py in a terminal
+#mymovie("laser",pause=0.5,set=[200,201])
 #mpi4py=mysay(datadir="stoma_py")
 #mpi4py=mysay(datadir="stomb_py")
-
 mpi4py.nx()
 
 %macro n 4
