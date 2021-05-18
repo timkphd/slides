@@ -5,7 +5,7 @@ html("readme.html")
 ls()
 cat("link for movie: https://73.34.192.221/quake/bagoftasks_R/#15")
 # start one of the slide shows:
-#  imbase("rbot/bagoftasks_R")
+#  imbase("bagoftasks_R/bagoftasks_R")
 #  imbase("stoma_R/stoma_R")
 #  imbase("Rstuff/Rstuff")
 imbase("Rstuff/Rstuff")
