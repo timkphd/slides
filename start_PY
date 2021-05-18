@@ -13,7 +13,7 @@ from tymer import sprint
 #mpi4py=mysay(datadir="mpi02_py")
 mpi4py=mysay(datadir="bagoftasks_py")
 #curl https://raw.githubusercontent.com/timkphd/examples/master/r/laser.tgz | tar -xz
-#https://73.34.192.221/bot
+#https://tinyurl.com/3xzfx7dx
 #run simple.py in a terminal
 #mymovie("laser",pause=0.5,set=[200,201])
 #mpi4py=mysay(datadir="stoma_py")
