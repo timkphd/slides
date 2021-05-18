@@ -3,7 +3,7 @@ source("mysys.R")
 source("tymer.R")
 html("readme.html")
 ls()
-cat("link for movie: https://73.34.192.221/quake/bagoftasks_R/#15")
+cat("link for movie: https://tinyurl.com/au6neeyn")
 # start one of the slide shows:
 #  imbase("bagoftasks_R/bagoftasks_R")
 #  imbase("stoma_R/stoma_R")
@@ -35,3 +35,22 @@ mpi.finalize()"""
 z()
 
 #srun("-n 4 ./bot.R")
+
+
+
+library("png")
+pp <- readPNG("laser/l_198.png")
+plot.new() 
+rasterImage(pp,0,0,1,1)
+pp <- readPNG("laser/l_199.png")
+plot.new() 
+rasterImage(pp,0,0,1,1)
+
+
+
+source("mysys.R")
+source("tymer.R")
+image("laser/l_199.png")
+
+cat("link for movie: https://tinyurl.com/au6neeyn")
+
