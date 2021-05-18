@@ -18,6 +18,7 @@ mpi4py=mysay(datadir="bagoftasks_py")
 #mymovie("laser",pause=0.5,set=[200,201])
 #mpi4py=mysay(datadir="stoma_py")
 #mpi4py=mysay(datadir="stomb_py")
+
 mpi4py.nx()
 
 %macro n 4
@@ -28,28 +29,18 @@ cd ../..
 
 !srun -n 4 ./P_ex00.py
 
-# In[9]:
 
 srun -n 8 hostname
 
-# In[10]:
 
 !srun -n 8 hostname
 
-# In[11]:
-
 tymer(["-i","start"])
-
-# In[12]:
 
 %%capture out
 srun -n 8 ./report.py
 
-# In[13]:
-
 tymer(["-i","done"])
-
-# In[14]:
 
 for x in clist(out) :
     print(x)
@@ -57,3 +48,13 @@ for x in clist(out) :
 n
 
 nx(slide=1)
+
+
+
+
+# run outside of jupyter
+# rm out3d
+# srun -n 4 ./stp.py < small.in
+# export SIZE="50,50"
+# ./mkview.py out3d 
+# then mymovie(".")
