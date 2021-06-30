@@ -7,3 +7,8 @@
 1. bagoftasks_py.<br>Bag of task parallelism in Python - does image creation
 1. stoma_py:<br>Finite difference code in Python and MPI
 1. stomb_py:<br>Finite difference code in Python and MPI, more features
+
+# Other slides
+1. HPC-Overview:<br>Overview of parallel programming
+1. mpi01:<br>Basic MPI
+1. openmp:<br>Basic OpenMP
