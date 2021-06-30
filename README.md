@@ -1,3 +1,8 @@
+# Recent slides
+1. HPC-Overview:<br>Overview of parallel programming
+1. mpi01:<br>Basic MPI
+1. openmp:<br>Basic OpenMP
+
 # Slides from RMACC 2021
 1. Rstuff:<br>Basic MPI and "native" parallel in R
 1. bagoftasks:<br>Bag of task parallelism in R - does image creation
@@ -8,7 +13,3 @@
 1. stoma_py:<br>Finite difference code in Python and MPI
 1. stomb_py:<br>Finite difference code in Python and MPI, more features
 
-# Other slides
-1. HPC-Overview:<br>Overview of parallel programming
-1. mpi01:<br>Basic MPI
-1. openmp:<br>Basic OpenMP
