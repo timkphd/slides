@@ -19,12 +19,14 @@
 
 # Some NREL links
 1. Slurm documentation and slides
-    1. Documentation [https://github.com/NREL/HPC/tree/master/slurm](https://rmacc.org)
-    2. Slides [https://github.com/NREL/HPC/tree/master/workshops/slurm_examples_slides](https://rmacc.org)
+    1. Documentation [https://github.com/NREL/HPC/tree/master/slurm]https://github.com/NREL/HPC/tree/master/slurm)
+    2. Slides [https://github.com/NREL/HPC/tree/master/workshops/slurm_examples_slides]([https://github.com/NREL/HPC/tree/master/workshops/slurm_examples_slides)
 1. Advanced Jupyter
-    1. Jupyter notebook - run multinode [https://github.com/NREL/HPC/tree/master/workshops/adv_jupyter/Slurm_multinode](https://rmacc.org)
+    1. Jupyter notebook - run multinode [https://github.com/NREL/HPC/tree/master/workshops/adv_jupyter/Slurm_multinode](https://github.com/NREL/HPC/tree/master/workshops/adv_jupyter/Slurm_multinode)
     2. Jupyter notebook - MPI, tensorflow, mnist with image blur on gpu, CPU/GPU convolution comparison 
-[https://github.com/NREL/HPC/tree/master/workshops/adv_jupyter/mpi4py_tf](https://rmacc.org)
+[https://github.com/NREL/HPC/tree/master/workshops/adv_jupyter/mpi4py_tf](https://github.com/NREL/HPC/tree/master/workshops/adv_jupyter/mpi4py_tf)
+1. Fortran
+    1. [https://github.com/NREL/HPC/blob/master/languages/fortran/Fortran90/f90.md](https://github.com/NREL/HPC/blob/master/languages/fortran/Fortran90/f90.md)
 
 # NREL's Swift/Vermilion user system install with spack
 1. In the works
